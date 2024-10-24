@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="centered-title">
+        <h1>Vehicle Management System</h1>
+    </div>
+    <div class="menu">
+        <a href="#vehicles-section" class="btn">Manage Vehicles</a>
+        <a href="brands.html" class="btn">Manage Brands</a>
+        <a href="models.html" class="btn">Manage Models</a>
+    </div>
+
+    <!-- Vehicles Section -->
+    <div id="vehicles-section">
+        <h2>Manage Vehicles</h2>
+        <form id="vehicleForm">
+            <input type="hidden" id="vehicleID" name="vehicleID"> <!-- Hidden field for vehicle ID -->
+            <div class="form-group">
+                <label for="brandId">Brand:</label>
+                <select id="brandId" name="brandId" required>
+                    <option value="" disabled selected>Select a brand</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modelId">Model:</label>
+                <select id="modelId" name="modelId" required>
+                    <option value="" disabled selected>Select a model</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+            <button type="submit" class="btn">Save Vehicle</button>
+        </form>
+
+        <h2>Vehicles List</h2>
+        <ul id="vehicleList"></ul>
+
+        <div id="error-message" style="color: red;"></div> <!-- Error message display -->
+    </div>
+
+    <script>
+        // Call to load brands and models on page load
+        $(document).ready(function () {
+            loadBrands();
+            loadModels();
+        });
+    </script>
+</body>
+</html>

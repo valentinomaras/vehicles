@@ -1,0 +1,93 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+.centered-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+    .menu .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+        .menu .btn:hover {
+            background-color: #0056b3;
+        }
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+#brandList, #modelList {
+    list-style: none;
+    padding: 0;
+}
+
+    #brandList li, #modelList li {
+        background-color: white;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 200px;
+    background-color: #6c757d;
+}
+
+    .back-btn:hover {
+        background-color: #5a6268;
+    }

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Brands</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="centered-title">
+        <h1>Manage Vehicle Brands</h1>
+    </div>
+
+    <!-- Form to add a new brand -->
+    <form id="brandForm">
+        <div class="form-group">
+            <label for="brandName">Brand Name:</label>
+            <input type="text" id="brandName" name="brandName" required>
+        </div>
+        <button type="submit" class="btn">Save Brand</button>
+    </form>
+
+    <!-- List of existing brands -->
+    <div>
+        <h2>Brand List</h2>
+        <ul id="brandList"></ul> <!-- Brands will be displayed here -->
+    </div>
+
+    <a href="index.html" class="btn back-btn">Back to Dashboard</a>
+</body>
+</html>

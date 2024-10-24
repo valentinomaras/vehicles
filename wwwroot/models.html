@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Models</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Ensure jQuery is loaded -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="centered-title">
+        <h1>Manage Vehicle Models</h1>
+    </div>
+
+    <form id="modelForm">
+        <input type="hidden" id="modelID" name="modelID"> <!-- Hidden field for model ID -->
+        <div class="form-group">
+            <label for="modelName">Model Name:</label>
+            <input type="text" id="modelName" name="modelName" required>
+        </div>
+        <div class="form-group">
+            <label for="brandId">Brand:</label>
+            <select id="brandId" name="brandId" required>
+                <option value="" disabled selected>Select a brand</option> <!-- Prompt to select a brand -->
+            </select>
+        </div>
+        <button type="submit" class="btn">Add Model</button>
+    </form>
+
+    <div>
+        <h2>Model List</h2>
+        <ul id="modelList"></ul> <!-- Models will be displayed here -->
+    </div>
+
+    <div id="error-message" style="color: red;"></div> <!-- Error message display -->
+
+    <a href="index.html" class="btn back-btn">Back to Dashboard</a>
+</body>
+</html>
